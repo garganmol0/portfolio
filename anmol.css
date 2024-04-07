@@ -1,0 +1,275 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Define color variables */
+:root {
+    --primary-color: #ff7613;
+    --text-color: #727171;
+}
+
+/* Set base font size */
+html {
+    font-size: 10px;
+}
+
+/* Body styles */
+body {
+    font-family: Inter, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Remove default link styles */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Common styles */
+img {
+    width: 100%;
+}
+
+/* Title styles */
+.title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* Description styles */
+.description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+/* Download button styles */
+.downloadBtn {
+    display: block;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.downloadBtn:hover {
+    color: var(--primary-color);
+}
+
+/* Pre-title styles */
+.item_preTitle {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+/* Title styles */
+.item_title {
+    font-size: 1.6rem;
+    color: azure;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+
+/* Subtitle styles */
+.item_subtitle {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+/* Container layout */
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Responsive layout for container */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 3rem;
+        gap: 7rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Profile section */
+.profile {
+    grid-column: 1 / -1;
+    margin-bottom: 3rem;
+}
+
+/* Group styles */
+.group-1,
+.group-2,
+.group-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Styles for group 3 */
+.group-3 {
+    grid-column: 1 / -1;
+    gap: 5rem;
+}
+
+/* Individual group item styles */
+.group-3 > div {
+    flex: 1;
+}
+
+/* Responsive layout for profile */
+@media only screen and (max-width: 768px) {
+    .profile {
+        margin-bottom: 0;
+    }
+    .group-3 {
+        flex-direction: column;
+    }
+}
+
+/* Profile container styles */
+.profile_container {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Profile image styles */
+.profile_img {
+    max-width: 250px;
+}
+
+/* First name styles */
+.Fname {
+    color: azure;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: clamp(2rem, 8vw, 4rem);
+    display: block;
+    margin-bottom: -0.8rem;
+}
+
+/* Last name styles */
+.Lname {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+
+/* Profile title styles */
+.profile_title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Responsive layout for profile container */
+@media only screen and (max-width: 760px) {
+    .profile_container {
+        flex-direction: column;
+    }
+}
+
+/* Hobbies list styles */
+.Hobbies_list {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+/* Experience item styles */
+.Experience_item {
+    margin-top: 0%;
+}
+
+/* Experience name styles */
+.Experience_name {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* Education item styles */
+.edu_item {
+    margin-top: 2rem;
+}
+
+/* Expertise list styles */
+.exp_list {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+    color: var(--text-color);
+}
+
+/* Interests section styles */
+.intItems {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Interest element styles */
+.intElement {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+/* Socials section styles */
+.socialItems {
+    margin-top: 2rem;
+}
+
+/* Social item styles */
+.socialItem {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    color: var(--text-color);
+}
+
+/* Hover effect for social items */
+.socialItem:hover {
+    color: var(--primary-color);
+}
+
+/* Horizontal rule styles */
+hr {
+    grid-column: 1 / -1;
+    width: 80%;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive layout for horizontal rule */
+@media only screen and (max-width: 768px) {
+    hr {
+        margin: 0 auto;
+    }
+}
